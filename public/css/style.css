@@ -72,10 +72,7 @@ header{
 #banner{
 	width: 100%;
 	height: 370px;
-	background-color: #131112;
-	/*background-image: url(/img/banner-img.jpg);*/
-	background-position: center;
-	background-repeat: no-repeat;
+	background: #131112 url(/img/banner-img.jpg) center no-repeat;
 }
 
 /* =============================================================================
@@ -84,12 +81,11 @@ header{
 
 #main-body{
 	width: 100%;
-	height: 214px;
-	background-image: url(/img/body-bg.png);
-	background-position: center;
-	background-repeat: no-repeat;
+	height: 295px;
+	background-image: url(/img/header-line.jpg), url(/img/body-bg.png);
+	background-position: center top, center top;
+	background-repeat: no-repeat, no-repeat;
 }
-
 
 /* =============================================================================
    Footer
