@@ -65,11 +65,11 @@ header #wrapper{
 }
 
 header .logo{
-	width: 100px;
+	width: 370px;
 	height: 100px;
 	padding-top: 50px;
 	padding-left: 20px;
-	background: url(/img/mountain.png) center no-repeat;
+	background: url(/img/title-logo.png) center no-repeat;
 }
 
 /* =============================================================================
