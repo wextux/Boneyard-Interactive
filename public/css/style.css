@@ -33,7 +33,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { background-color: #271D16; margin: 0; font-size: 1em; line-height: 1.4; }
+body { background-color: #241A13; margin: 0; font-size: 1em; line-height: 1.4; }
 
 body, button, input, select, textarea { font-family: sans-serif; color: #99805A; }
 
@@ -45,6 +45,7 @@ body, button, input, select, textarea { font-family: sans-serif; color: #99805A;
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
 
 /* =============================================================================
    Header
@@ -66,13 +67,53 @@ header{
 }
 
 /* =============================================================================
+   Wrapper
+   ========================================================================== */
+
+#wrapper{
+	width: 100%;
+	float: left;
+}
+
+.wrapper{
+	width: 900px;
+	margin: 0 auto;
+}
+
+/* =============================================================================
    Banner
    ========================================================================== */
 
 #banner{
+	background-color: #131112;
 	width: 100%;
+	float: left;
+}
+
+#banner .wrapper{
 	height: 370px;
-	background: #131112 url(/img/banner-img.jpg) center no-repeat;
+	overflow: hidden;
+	position: relative;
+}
+
+#banner .element1{
+	float: left;
+	padding: 120px 550px 0 10px;
+	width: 420px;
+	height: 250px;
+	background: url(/img/banner-img.jpg) center bottom no-repeat;
+	position: absolute;
+}
+
+#baner h1{
+	color: #E3A357;
+	letter-spacing: -1px;
+	font: 26px "Trebuchet MS", "Lucida Grande",  Lucida, Verdana, sans-serif;
+}
+#baner h2{
+	font-size: 12px;
+	color: #8f6639;
+	font-weight: normal;
 }
 
 /* =============================================================================
@@ -80,11 +121,10 @@ header{
    ========================================================================== */
 
 #main-body{
+	float: left;
 	width: 100%;
-	height: 295px;
-	background-image: url(/img/header-line.jpg), url(/img/body-bg.png);
-	background-position: center top, center top;
-	background-repeat: no-repeat, no-repeat;
+	height: 370px;
+	background: url(/img/header-line.jpg) center top no-repeat, url(/img/main-bg.png) center top no-repeat;
 }
 
 /* =============================================================================
@@ -92,10 +132,14 @@ header{
    ========================================================================== */
 footer{
 	width: 100%;
-	height: 370px;	
-	background: #161110 url(/img/footer-bg-top.gif) repeat-x;
+	background: #161110 url(/img/footer-bg-top.png) repeat-x;
     float: left;
     padding: 15px 0 0 0;
+}
+
+footer #wrapper{
+	height: 370px;	
+	background: url(/img/footer-bg.png) repeat;
 }
 
 /* =============================================================================
