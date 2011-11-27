@@ -33,9 +33,9 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; font-size: 1em; line-height: 1.4; }
+body { background-color: #271D16; margin: 0; font-size: 1em; line-height: 1.4; }
 
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body, button, input, select, textarea { font-family: sans-serif; color: #99805A; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -46,14 +46,69 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 
+/* =============================================================================
+   Header
+   ========================================================================== */ 
+header{
+	width: 100%;
+	height: 130px;
+	background-image: url(/img/header-line.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+#header-wrapper{
+	width: 100%;
+	height: 129px;
+	background-image: url(/img/header-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* =============================================================================
+   Banner
+   ========================================================================== */
+
+#banner{
+	width: 100%;
+	height: 370px;
+	background-color: #131112;
+	/*background-image: url(/img/banner-img.jpg);*/
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* =============================================================================
+   Body
+   ========================================================================== */
+
+#main-body{
+	width: 100%;
+	height: 214px;
+	background-image: url(/img/body-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+footer{
+	width: 100%;
+	height: 370px;	
+	background: #161110 url(/img/footer_bg_top.gif) repeat-x;
+    float: left;
+    padding: 15px 0 0 0;
+}
 
 /* =============================================================================
    Links
    ========================================================================== */
 
-a { color: #00e; }
+a { color: #99805A; }
 a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a:hover { color: #C1AD7E; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
