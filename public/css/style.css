@@ -97,7 +97,7 @@ header{
 footer{
 	width: 100%;
 	height: 370px;	
-	background: #161110 url(/img/footer_bg_top.gif) repeat-x;
+	background: #161110 url(/img/footer-bg-top.gif) repeat-x;
     float: left;
     padding: 15px 0 0 0;
 }
