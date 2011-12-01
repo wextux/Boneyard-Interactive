@@ -46,31 +46,56 @@ body, button, input, select, textarea { font-family: sans-serif; color: #99805A;
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 
+/* =============================================================================
+   Global Stucture
+   ========================================================================== */
+
+.body1 {background: url(/img/header-bg-2.png) center top no-repeat;}
+.body2 {background: url(/img/banner.png) center top no-repeat;}
+.body3 {background: url(/img/main-bg-2.png) center top no-repeat;}
+.body4 {background-color: #290e05;}
+.main {	margin:0 auto;	width:900px; height: 400px; position:relative;z-index:2}
 
 /* =============================================================================
    Header
    ========================================================================== */ 
 header{
-	width: 100%;
-	height: 130px;
-	background-image: url(/img/header-line.jpg), url(/img/header-bg-2.png);
-	background-position: center bottom, center;
-	background-repeat: no-repeat;
+	height: 170px;
 }
 
-header #wrapper{
-	width: 800px;
-	height: 129px;
-	padding-left: 10%;
+nav {
+	margin-right: 100px;
 }
 
-header .logo{
-	width: 370px;
-	height: 130px;
-	padding-top: 1px;
-	padding-left: 5px;
-	background: url(/img/title-logo-2.png) center no-repeat;
+#logo {
+	display:block;
+	background:url(/img/logo-title.png) no-repeat;
+	width:150px;
+	height:150px;
+	margin-left: 100px;
+	text-indent:-5000px
 }
+
+#logo:hover{
+	background:url(/img/logo-title-hover.png) no-repeat;
+}
+
+/* =============================================================================
+   Menu
+   ========================================================================== */
+
+#menu {float:right;padding-top:85px;padding-bottom:5px}
+#menu li {float:left;padding-right:9px; width: 80px; height: 70px;}
+#menu li a.home {background: url(/img/nav-home.png) no-repeat}
+#menu li a.portfolio {background: url(/img/nav-portfolio.png) no-repeat}
+#menu li a.contact {background: url(/img/nav-contact.png) no-repeat}
+#menu li a.home:hover {background: url(/img/nav-home-hover.png) no-repeat}
+#menu li a.portfolio:hover {background: url(/img/nav-portfolio-hover.png) no-repeat}
+#menu li a.contact:hover {background: url(/img/nav-contact-hover.png) no-repeat}
+#menu li a {display:block;position:relative;width:80px;height: 70px;}
+/*#menu li a:hover, #menu #menu_active a {background:url(../images/menu_bg.gif) top repeat-x #b3b3b3;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;box-shadow:3px 3px 5px #402f55;-moz-box-shadow:3px 3px 5px #402f55;-webkit-box-shadow:3px 3px 5px #402f55;color:#673f85;}
+*/
+
 
 /* =============================================================================
    Wrapper
@@ -91,18 +116,17 @@ header .logo{
    ========================================================================== */
 
 #banner{
-	background-color: #2e1006;
+	height: 365px;
 	width: 100%;
-	float: left;
 }
 
-#banner .wrapper{
-	height: 370px;
+#banner.wrapper{
+	height: 365px;
 	overflow: hidden;
 	position: relative;
 }
 
-#banner .element1{
+#banner.element1{
 	float: left;
 	padding: 120px 550px 0 10px;
 	width: 420px;
@@ -130,7 +154,7 @@ header .logo{
 	float: left;
 	width: 100%;
 	height: 370px;
-	background: url(/img/header-line.jpg) center top no-repeat, url(/img/main-bg-2.png) center top no-repeat;
+	background: url(/img/footer-bg-top.png) bottom repeat-x, url(/img/main-bg-2.png) center top no-repeat;
 }
 
 /* =============================================================================
@@ -138,14 +162,13 @@ header .logo{
    ========================================================================== */
 footer{
 	width: 100%;
-	background: #161110 url(/img/footer-bg-top.png) repeat-x;
+	height: 370px;
     float: left;
     padding: 15px 0 0 0;
 }
 
 footer #wrapper{
-	height: 370px;	
-	background: url(/img/footer-bg.png) repeat;
+
 }
 
 /* =============================================================================
